@@ -17,8 +17,8 @@ library(CausalImpact)
 
 
 ###Load in all data
-nzcathist <- read_excel(file.choose())
-auscathist <- read_excel(file.choose())
+nzcathist <- read_excel("nzcathist.xlsx")
+auscathist <- read_excel("auscathist.xlsx")
 
 ### Create outcome variable that is cost accrued, inflation-adjusted to 2026 USD as of 4/20/2026
 nzcathist$USDtoday <- nzcathist$NormCost2014*1000/827.003
